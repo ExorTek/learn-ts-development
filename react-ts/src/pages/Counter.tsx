@@ -5,11 +5,11 @@ function Counter() {
     const [count, setCount] = useState(0);
     const increment = () => {
         if (count !== 99) return setCount(prevState => prevState + 1);
-        return alert("You can't increment more than 99");
+        alert("You can't increment more than 99");
     };
     const decrement = () => {
         if (count !== 0) return setCount(prevState => prevState - 1);
-        return alert("You can't decrement less than 0");
+        alert("You can't decrement less than 0");
     };
 
     return (
